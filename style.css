@@ -1,0 +1,131 @@
+/* Ce code va dans l'onglet style.css */
+
+body {
+  font-family: 'Helvetica', sans-serif; /* Change la police de toute la page */
+  background-color: #f4f4f4;            /* Ajoute une couleur de fond gris clair */
+  color: #333333;                       /* Change la couleur du texte en gris foncé */
+}
+
+h1 {
+  color: #FF530D;                       /* Ton nom Lorrena sera en orange */
+  font-size: 48px;                      /* Pour que ce soit très grand */
+  text-align: center;                   /* Pour centrer ton nom */
+}
+
+h2, h3 {
+  color: #106BA3;                       /* Tes titres de passions seront en bleu */
+}
+
+a {
+  color: #FF530D;                       /* Ton lien Wikipédia sera orange */
+  text-decoration: none;                /* Enlève le trait sous le lien */
+  font-weight: bold;                    /* Met le lien en gras */
+}
+/* --- NOUVEAU CODE (après la ligne 23) --- */
+
+/* On utilise # pour l'ID de l'image */
+#profile-img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* On utilise . pour la classe des blocs */
+.card {
+  background-color: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  max-width: 500px;
+  text-align: center;
+}
+
+/* On change la couleur des titres uniquement dans les cards */
+.card h3 {
+  color: #FF530D;
+}
+/* --- RESPONSIVE DESIGN (À la toute fin du fichier) --- */
+
+/* Quand l'écran est plus petit que 960px (Tablettes) */
+@media (max-width: 960px) {
+  .card {
+    width: 700px; /* Les blocs s'élargissent un peu sur tablette */
+  }
+}
+
+/* Quand l'écran est plus petit que 720px (Grands téléphones) */
+@media (max-width: 720px) {
+  .card {
+    width: 500px;
+  }
+}
+
+/* Quand l'écran est plus petit que 540px (Petits téléphones) */
+@media (max-width: 540px) {
+  .card {
+    width: 300px; /* On réduit la largeur pour que ça ne dépasse pas de l'écran */
+  }
+  h1 {
+    font-size: 28px; /* On réduit aussi la taille du titre pour qu'il tienne sur une ligne */
+  }
+}
+/* 1. Le container pour centrer le site au milieu de l'écran */
+.container {
+  width: 700px;      /* Largeur fixe du site */
+  margin: 40px auto; /* Centre le bloc : 40px en haut/bas, auto à gauche/droite */
+}
+
+/* 2. Le design des cartes blanches */
+.card-white {
+  background-color: white;
+  padding: 40px;               /* Espace à l'intérieur de la carte */
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1); /* Une ombre douce et élégante */
+  border-radius: 4px;          /* Bords légèrement arrondis */
+  margin-bottom: 20px;         /* Espace entre les cartes */
+  text-align: center;          /* Tout le texte de la carte est centré */
+}
+
+/* 3. Un petit effet sympa quand on survole la carte */
+.card-white:hover {
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2); /* L'ombre devient un peu plus forte */
+}
+.list-inline {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.list-inline a {
+  font-size: 24px;
+  color: #0077b5; /* La couleur officielle de LinkedIn ! */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list-inline a:hover {
+  color: #FF530D; /* Devient orange quand on passe la souris dessus */
+}
+/* Le style pour ton bouton "Mon site préféré" */
+.btn-blue {
+  background-color: #6B72E1; /* Une belle couleur bleue */
+  color: white;             /* Texte en blanc */
+  padding: 15px 20px;       /* Donne de la taille au bouton */
+  border-radius: 4px;       /* Bords arrondis */
+  text-decoration: none;    /* Enlève le souligné */
+  display: inline-block;    /* Permet au bouton de prendre sa forme */
+  margin-top: 20px;         /* Espace au-dessus du bouton */
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #106BA3; /* Change de bleu quand on le survole */
+  color: white;
+}
